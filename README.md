@@ -18,6 +18,8 @@ This project implements a compact vision–language pipeline using **CLIP** embe
    - Uses CLIP text prompts like `"a photo of a dog"` for each class
 
 > Note: This system **does not generate images**. It retrieves and ranks from a fixed image database.
+> > **Note on image quality:** In this project we use a small CIFAR-10 subset for fast experiments. CIFAR-10 images are **32×32 pixels**, so when they are upscaled for visualization they can look blurry or blocky. The system is still performing retrieval/classification correctly; the blur is a dataset resolution limitation. For clearer results, we can switch to higher-resolution datasets (e.g., COCO/Flickr).
+
 
 ---
 
